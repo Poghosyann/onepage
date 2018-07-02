@@ -1,0 +1,231 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : wordpressboss
+Author URL   : https://themeforest.net/user/wordpressboss
+Template Name: Blandi-Premium Onepage Agency template
+Version      : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .mainmenu .navbar-nav li a {
+        padding: 30px 11px;
+        font-size: 12px;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 16px 11px;
+        font-size: 12px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .single-logo {
+        margin-top: 30px;
+    }
+    .single-blog img {
+        width: 100%;
+    }
+    .pricing-box {
+        margin-top: 30px;
+    }
+    .have-a-project-idea-white .project-idea h2,
+    .have-a-project-idea-white .project-idea p {
+        font-size: 22px;
+    }
+    .project-idea h2,
+    .project-idea p {
+        font-size: 22px;
+    }
+    .single-logo {
+        width: 160px;
+        margin: 0 auto;
+    }
+    .single-project-complete {
+        margin-top: 30px;
+    }
+    .about-text {
+        margin-top: 0px;
+    }
+    .section-title p {
+        font-weight: 400;
+        padding-right: 0px;
+    }
+    .why-image {
+        margin-bottom: 30px;
+    }
+    .footer-text h6 {
+        text-align: center;
+    }
+    .footer-social-link {
+        text-align: center;
+    }
+    .single-details {
+        text-align: center;
+    }
+    .our-news-letter h2 {
+        font-size: 20px;
+    }
+    .our-news-letter {
+        padding: 50px 0px;
+    }
+    .single-project-complete {
+        text-align: center;
+    }
+    .single-testimonial {
+        padding: 40px 40px;
+    }
+    a.callto{
+        float: none;
+        margin-top: 10px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+    .menu-bg .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .mainmenu .navbar-nav li a:hover {
+        color: #fff;
+    }
+    .menu-bg .mainmenu .navbar-nav li a:hover {
+        color: #fff;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-toggle {
+        margin-top: -40px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .menu-bg .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .welcome-image-area,
+    .welcome-video-area {
+        padding-top: 120px;
+    }
+    .welcome-image-area h2,
+    .single-slide-item h2,
+    .welcome-video-area h2 {
+        font-size: 30px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+    }
+    .section-title h2 span {
+        font-size: 30px;
+    }
+    .footer-social-link {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .pricing-box {
+        margin-top: 30px;
+    }
+    .single-testimonial {
+        padding: 20px 0px;
+    }
+    .video-area-text {
+        margin-top: 50px;
+    }
+    .footer-social-link {
+        text-align: center;
+    }
+    .footer-area img {
+        margin-bottom: 0px;
+    }
+    .our-news-letter input[type="text"] {
+        width: 90%;
+    }
+    .our-news-letter h2 {
+        font-size: 16px;
+    }
+    .single-project-complete {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .header-text {
+        margin-top: 10px;
+    }
+    .footer-text h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .footer-area {
+        padding: 50px 0px;
+    }
+    .section-padding {
+        padding: 40px 0px;
+    }
+    .single-straty {
+        margin-top: 20px;
+    }
+    .section-title p {
+        font-weight: 400;
+        padding-right: 0px;
+    }
+    .call-to-action-area h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .why-image {
+        margin-bottom: 30px;
+    }
+    .about-text {
+        margin-top: 0px;
+    }
+    a.callto {
+        float: none;
+    }
+    .footer-text h6 {
+        text-align: center;
+    }
+    .footer-social-link {
+        text-align: center;
+    }
+    .single-details {
+        text-align: center;
+    }
+    .single-project-complete {
+        text-align: center;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-logo {
+        margin-bottom: 20px;
+    }
+}
