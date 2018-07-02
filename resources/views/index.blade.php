@@ -27,7 +27,7 @@
 </div>
 <!-- / END PRELOADER -->
 
-<!-- START HOMEPAGE DESIGN AREA --->
+<!-- START HOMEPAGE DESIGN AREA -->
 <header id="home" class="welcome-area">
     <div class="header-top-area">
         <div class="container">

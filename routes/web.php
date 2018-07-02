@@ -11,6 +11,27 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::group(['middleware' => 'web'], function (){
+    Route::match(['get', 'post'], '/', ['uses' => 'IndexController@execute', 'as' => 'home']);
+    Route::get('/page/{alias}', ['uses' => 'PageController@execute', 'as' => 'page']);
+
+    Route::auth();
 });
+
+
+//admin service
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+
+    //admin
+    Route::get('/',function (){
+        $data=['title'=>'Панель адміна'];
+        return view('admin.index',$data);
+    });
+
+    Route::group(['prefix'=>'pages'],function () {
+        Route::get('/', ['uses' => 'PagesController@execute', 'as' => 'pages']);
+        Route::match(['get', 'post'], '/add', ['uses' => 'PagesAddController@execute', 'as' => 'pagesAdd']);
+        Route::match(['get', 'post', 'delete'], '/edit/{page}', ['uses' => 'PagesEditController@execute', 'as' => 'pagesEdit']);
+    });
+});
+
