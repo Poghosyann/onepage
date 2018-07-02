@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function execute(){
-
+    public function execute(Request $request){
+        return view('site');
     }
 }
