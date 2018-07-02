@@ -19,7 +19,7 @@ Route::group(['middleware' => 'web'], function (){
 });
 
 
-//admin servicee
+//admin service
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
 
     //admin
