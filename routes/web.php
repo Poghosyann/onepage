@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
 
     //admin
     Route::get('/',function (){
-        $data=['title'=>'Панель адміна'];
+        $data=['title'=>'Admin Panel'];
         return view('admin.index',$data);
     });
 
