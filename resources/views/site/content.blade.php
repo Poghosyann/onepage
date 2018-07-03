@@ -40,7 +40,7 @@
             </section>
         @endif
     @endforeach
-@endif
+@endif   {{-- Section Pages --}}
 
 @if(isset($services) && is_object($services))
     <section id="service" class="service-area section-padding">
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </section>
-@endif
+@endif   {{-- Section Services --}}
 
 @if(isset($peoples) && is_object($peoples))
 <section id="team" class="team-area section-padding">
@@ -105,7 +105,7 @@
         </div>
     </div>
 </section>
-@endif
+@endif   {{-- Section Team --}}
 
 @if(isset($portfolios) && is_object($portfolios))
 <section id="work" class="work section-padding">
@@ -148,7 +148,7 @@
         </div>
     </div>
 </section>
-@endif
+@endif   {{-- Section Portfolios --}}
 
 <section id="contact" class="contact-area section-padding">
     <div class="container">
@@ -218,29 +218,8 @@
         </div>
 
     </div>
-</section>
+</section>   {{-- Section Contact --}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- START FOOTER DESIGN AREA -->
 <footer class="footer-area">
     <div class="container">
         <div class="row">
@@ -265,9 +244,8 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>   {{-- Section Footer --}}
 
-<!-- START SCROOL UP DESIGN AREA -->
 <div class="scroll-to-up">
     <div class="scrollup">
         <span class="lnr lnr-chevron-up"></span>
