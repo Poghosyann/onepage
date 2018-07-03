@@ -116,7 +116,7 @@ fieldset {
     margin: 0;
     font-weight: 700;
     position: relative;
-    text-transform: lowercase;
+    text-transform: capitalize;
     margin-bottom: 30px;
 }
 
