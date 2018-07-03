@@ -1,103 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blandi - Minimalist Onepage Agency HTML Template </title>
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,700|Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/linear-fonts.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/owlcarousel/css/owl.carousel.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/owlcarousel/css/owl.theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-</head>
-
-<body>
-<!-- START PRELOADER -->
-<div class="preloader">
-    <div class="status">
-        <div class="status-mes"></div>
-    </div>
-</div>
-<!-- / END PRELOADER -->
-
-<!-- START HOMEPAGE DESIGN AREA -->
-<header id="home" class="welcome-area">
-    <div class="header-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-2">
-                    <!-- START LOGO DESIGN AREA -->
-                    <div class="logo">
-                        <a href="/">
-                            <p>Blandi</p>
-                        </a>
-                    </div>
-                    <!-- END LOGO DESIGN AREA -->
-                </div>
-                <div class="col-md-9 col-sm-10">
-                    <!-- START MENU DESIGN AREA -->
-                    <div class="mainmenu">
-                        <div class="navbar navbar-nobg">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a>
-                                    </li>
-                                    <li><a class="smoth-scroll" href="#about">About</a>
-                                    </li>
-                                    <li><a class="smoth-scroll" href="#service">service</a>
-                                    </li>
-                                    <li><a class="smoth-scroll" href="#team">team</a>
-                                    </li>
-                                    <li><a class="smoth-scroll" href="#work">work</a>
-                                    </li>
-                                    <li><a class="smoth-scroll" href="#contact">contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END MENU DESIGN AREA -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="welcome-image-area" data-stellar-background-ratio="0.6">
-        <div class="display-table">
-            <div class="display-table-cell">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="header-text">
-                                <h2>we are creative agency.</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                <a class="slide-btn btn-color smoth-scroll" href="#about">learn more</a>
-                                <a class="slide-btn smoth-scroll" href="#contact">Contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</header>
-<!-- / END HOMEPAGE DESIGN AREA -->
-
 <!-- START ABOUT US DESIGN AREA -->
 <section id="about" class="about-us-area section-padding">
     <div class="container">
@@ -115,14 +15,13 @@
             <!-- START ABOUT IMAGE DESIGN AREA -->
             <div class="col-md-6 wow fadeInLeft" data-wow-delay=".2s">
                 <div class="about-image">
-                    <img src="assets/images/about.png" alt="" class="img-responsive">
+                    <img src="{{ asset('assets/images/about.png') }}" alt="" class="img-responsive">
                 </div>
             </div>
             <!-- / END ABOUT IMAGE DESIGN AREA -->
         </div>
     </div>
 </section>
-<!-- / END ABOUT US DESIGN AREA -->
 
 <!-- START SERVICES DESIGN AREA -->
 <section id="service" class="service-area section-padding">
@@ -193,7 +92,6 @@
         </div>
     </div>
 </section>
-<!-- / END SERVICES DESIGN AREA -->
 
 <!-- START TEAM DESIGN AREA -->
 <section id="team" class="team-area section-padding">
@@ -210,7 +108,7 @@
             <!-- START SINGLE TEAM DESIGN AREA -->
             <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="single-team">
-                    <img src="assets/images/team/1.jpg" alt="">
+                    <img src="{{ asset('assets/images/team/1.jpg') }}" alt="">
                     <div class="team-description">
                         <h3>CEO/Founder</h3>
                         <h4>Arfan Hridoy</h4>
@@ -233,7 +131,7 @@
             <!-- START SINGLE TEAM DESIGN AREA -->
             <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="single-team">
-                    <img src="assets/images/team/2.jpg" alt="">
+                    <img src="{{ asset('assets/images/team/2.jpg') }}" alt="">
                     <div class="team-description">
                         <h3>Designer</h3>
                         <h4>Adam sid</h4>
@@ -256,7 +154,7 @@
             <!-- START SINGLE TEAM DESIGN AREA -->
             <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
                 <div class="single-team">
-                    <img src="assets/images/team/3.jpg" alt="">
+                    <img src="{{ asset('assets/images/team/3.jpg') }}" alt="">
                     <div class="team-description">
                         <h3>programmer</h3>
                         <h4>Ahmed imtiaj</h4>
@@ -279,7 +177,7 @@
             <!-- START SINGLE TEAM DESIGN AREA -->
             <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                 <div class="single-team">
-                    <img src="assets/images/team/4.jpg" alt="">
+                    <img src="{{ asset('assets/images/team/4.jpg') }}" alt="">
                     <div class="team-description">
                         <h3>Marketer</h3>
                         <h4>Eheta Aisha</h4>
@@ -302,7 +200,6 @@
         </div>
     </div>
 </section>
-<!-- / END TEAM DESIGN AREA -->
 
 <!-- START WORK DESIGN AREA -->
 <section id="work" class="work section-padding">
@@ -328,8 +225,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix webdesign">
                     <div class="item wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="assets/images/portfolio/1.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/1.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/1.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -343,8 +240,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix development">
                     <div class="item">
-                        <a href="assets/images/portfolio/2.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/2.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/2.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/2.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -358,8 +255,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix web">
                     <div class="item">
-                        <a href="assets/images/portfolio/3.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/3.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/3.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/3.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -373,8 +270,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix development photography">
                     <div class="item">
-                        <a href="assets/images/portfolio/4.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/4.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/4.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/4.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -388,8 +285,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix typography web">
                     <div class="item">
-                        <a href="assets/images/portfolio/5.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/5.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/5.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/5.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -403,8 +300,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix webdesign development photography">
                     <div class="item">
-                        <a href="assets/images/portfolio/6.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/6.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/6.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/6.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -418,8 +315,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix webdesign">
                     <div class="item">
-                        <a href="assets/images/portfolio/1.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/1.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/1.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -433,8 +330,8 @@
                 <!-- START SINGLE WORK DESIGN AREA -->
                 <div class="col-md-3 col-sm-4 mix development">
                     <div class="item">
-                        <a href="assets/images/portfolio/2.jpg" class="work-popup">
-                            <img src="assets/images/portfolio/2.jpg" alt="">
+                        <a href="{{ asset('assets/images/portfolio/2.jpg') }}" class="work-popup">
+                            <img src="{{ asset('assets/images/portfolio/2.jpg') }}" alt="">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-item">
                                     <i class="fa fa-arrows"></i>
@@ -449,7 +346,6 @@
         </div>
     </div>
 </section>
-<!-- / END START WORK DESIGN AREA -->
 
 <!-- START CONTACT DESIGN AREA -->
 <section id="contact" class="contact-area section-padding">
@@ -525,8 +421,6 @@
 
     </div>
 </section>
-<!-- / END CONTACT DESIGN AREA -->
-
 
 <!-- START FOOTER DESIGN AREA -->
 <footer class="footer-area">
@@ -554,7 +448,6 @@
         </div>
     </div>
 </footer>
-<!-- / END CONTACT DETAILS DESIGN AREA -->
 
 <!-- START SCROOL UP DESIGN AREA -->
 <div class="scroll-to-up">
@@ -562,26 +455,3 @@
         <span class="lnr lnr-chevron-up"></span>
     </div>
 </div>
-<!-- / END SCROOL UP DESIGN AREA -->
-
-<!-- LATEST JQUERY -->
-<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.appear.js') }}"></script>
-<script src="{{ asset('assets/owlcarousel/js/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.mixitup.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.stellar.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.mb.YTPlayer.min.js') }}"></script>
-<script type="text/javascript">
-    $('.player').mb_YTPlayer();
-</script>
-<!-- COUNTER UP JS -->
-<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-<script src="{{ asset('assets/js/wow.min.js') }}"></script>
-<script src="{{ asset('assets/js/form-contact.js') }}"></script>
-<script src="{{ asset('assets/js/scripts.js') }}"></script>
-</body>
-
-</html>
