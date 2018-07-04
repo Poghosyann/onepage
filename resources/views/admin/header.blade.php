@@ -1,36 +1,31 @@
-<div class="container portfolio_title">
+<div class="container admin_header">
 
-    <!-- Title -->
-    <div class="section-title">
-        <h2>{{$title}}</h2>
-    </div>
-    <!--/Title -->
+    <div class="row">
 
-</div>
-<!-- Container -->
+        <div class="col-md-3">
+            <h2>{{$title}}</h2>
+        </div>
+        <div class="col-md-9">
+            <ul class="work">
+                <li>
+                    <a class="slide-btn btn-color smoth-scroll"  href="{{route('pages')}}">
+                        <h5>Pages</h5>
+                    </a>
+                </li>
 
-<div class="container portfolio">
+                <li>
+                    <a class="slide-btn btn-color smoth-scroll" href="{{route('portfolio')}}">
+                        <h5>Portfolio</h5>
+                    </a>
+                </li>
 
-    <div id="filters" class="sixteen columns">
-        <ul style="padding:0">
-            <li>
-                <a  href="{{route('pages')}}">
-                    <h5>Pages</h5>
-                </a>
-            </li>
-
-            <li>
-                <a  href="{{route('portfolio')}}">
-                    <h5>Portfolio</h5>
-                </a>
-            </li>
-
-            <li>
-                <a href="{{route('services')}}">
-                    <h5>Services</h5>
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a class="slide-btn btn-color smoth-scroll" href="{{route('services')}}">
+                        <h5>Services</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 </div>

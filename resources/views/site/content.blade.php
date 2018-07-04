@@ -1,7 +1,7 @@
 @if(isset($pages) && is_object($pages))
     @foreach($pages as $k=>$page)
         @if($k % 2 == 0)
-            <section id="aboutUs" class="about-us-area section-padding">
+            <section id="{{ $page->alias }}" class="about-us-area section-padding">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -19,20 +19,17 @@
                 </div>
             </section>
         @else
-            <section id="aboutUs" class="about-us-area section-padding">
+            <section id="{{ $page->alias }}" class="about-us-area section-padding">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 wow fadeInLeft" data-wow-delay=".2s">
                             <div class="about-image">
-                                <img src="{{ asset('assets/images/about.png') }}" alt="" class="img-responsive">
+                                {!! Html::image('assets/images/'.$page->images) !!}
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="about-text wow fadeInUp" data-wow-delay=".2s">
-                                <h2>Blandi Onepage Agency template</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#" class="read-more">Read more<span class="lnr lnr-arrow-right"></span></a>
+                                {!! $page->text !!}
                             </div>
                         </div>
                     </div>

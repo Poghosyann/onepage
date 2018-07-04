@@ -183,6 +183,16 @@ a.read-more:hover span {
     transition: all 0.4s ease-out;
 }
 
+/* Admin */
+
+
+.admin_header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid darkgrey;
+    border-radius: 5px;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -856,10 +866,6 @@ a.callto:hover {
     margin: 0;
 }
 
-.work {
-    background: #F9F9F9;
-}
-
 .work-inner .mix {
     display: none;
 }
@@ -879,7 +885,6 @@ ul.work li {
     font-weight: 400;
     border: none;
     cursor: pointer;
-    font-size: 12px;
 }
 
 ul.work li:hover {
@@ -950,6 +955,24 @@ ul.work li.active {
     color: #fff;
 }
 
+.add_new a{
+    padding: 8px 15px;
+    border: 1px solid #136fc8;
+    border-radius: 5px;
+}
+
+.add_new a:hover{
+    color: white !important;
+    background-color: #136fc8;
+}
+
+.add_new_table a:hover{
+    color: #0a3a68 !important;
+}
+
+table{
+    margin-top: 30px;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
