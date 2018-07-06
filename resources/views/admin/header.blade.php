@@ -2,10 +2,10 @@
 
     <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h2>{{$title}}</h2>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
             <ul class="work">
                 <li>
                     <a class="slide-btn btn-color smoth-scroll"  href="{{route('pages')}}">
