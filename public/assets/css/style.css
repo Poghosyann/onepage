@@ -194,6 +194,16 @@ a.read-more:hover span {
     border-radius: 5px;
 }
 
+.header_title h2{
+    float: left !important;
+}
+.table_img img{
+    width: 80px !important;
+}
+
+.edit_image{
+    width: 200px;
+}
 /*
 * ----------------------------------------------------------------------------------------
 * 02.PRELOADER & BOUNCE CCS STYLE

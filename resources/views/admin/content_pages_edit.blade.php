@@ -24,7 +24,7 @@
 
     <div class="form-group">
         {!! Form::label('old_images', 'Image:',['class'=>'col-xs-2 control-label']) !!}
-        <div class="col-xs-offset-2 col-xs-10">
+        <div class="edit_image col-md-2 col-xs-10">
             {!! Html::image('assets/img/'.$data['images'],'',['class'=>'img-circle img-responsive','width'=>'150px']) !!}
             {!! Form::hidden('old_images', $data['images']) !!}
         </div>

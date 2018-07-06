@@ -40,10 +40,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
         Route::match(['get','post','delete'],'/edit/{portfolio}',['uses'=>'PortfolioEditController@execute','as'=>'portfolioEdit']);
     });
 
-    Route::group(['prefix'=>'services'],function (){
+    Route::group(['prefix'=>'service'],function (){
         Route::get('/',['uses'=>'ServiceController@execute','as'=>'services']);
-        Route::match(['get','post'],'/add',['uses'=>'ServicesAddController@execute','as'=>'servicesAdd']);
-        Route::match(['get','post','delete'],'/edit/{service}',['uses'=>'ServicesEditController@execute','as'=>'servicesEdit']);
+        Route::match(['get','post'],'/add',['uses'=>'ServiceAddController@execute','as'=>'servicesAdd']);
+        Route::match(['get','post','delete'],'/edit/{service}',['uses'=>'ServiceEditController@execute','as'=>'servicesEdit']);
     });
 });
 
