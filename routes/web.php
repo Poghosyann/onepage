@@ -45,6 +45,12 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
         Route::match(['get','post'],'/add',['uses'=>'ServiceAddController@execute','as'=>'servicesAdd']);
         Route::match(['get','post','delete'],'/edit/{service}',['uses'=>'ServiceEditController@execute','as'=>'servicesEdit']);
     });
+
+    Route::group(['prefix'=>'people'],function (){
+        Route::get('/',['uses'=>'PeopleController@execute','as'=>'people']);
+        Route::match(['get','post'],'/add',['uses'=>'PeopleAddController@execute','as'=>'peopleAdd']);
+        Route::match(['get','post','delete'],'/edit/{people}',['uses'=>'PeopleEditController@execute','as'=>'peopleEdit']);
+    });
 });
 
 Auth::routes();
