@@ -32,7 +32,7 @@ class ServiceEditController extends Controller
 
             $service->fill($input);
             if($service->update()) {
-                return redirect('admin')->with('status', 'Service successful updated');
+                return redirect('admin/service')->with('status', 'Service successful updated');
             }
         }
         $old = $service->toArray();

@@ -87,9 +87,7 @@
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook fb"></i></a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-twitter tw"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-dribbble dri"></i></a>
+                                    <li><a href="#"><i class="fa fa-linkedin tw"></i></a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-instagram ins"></i></a>
                                     </li>
@@ -105,6 +103,7 @@
 @endif   {{-- Section Team --}}
 
 @if(isset($portfolios) && is_object($portfolios))
+
 <section id="work" class="work section-padding">
     <div class="container">
         <div class="row">
@@ -129,7 +128,7 @@
                 @foreach($portfolios as $portfolio)
                     <div class="col-md-3 col-sm-4 mix {{$portfolio->filter}}">
                         <div class="item">
-                            <a href="{{ asset('assets/images/portfolio/2.jpg') }}" class="work-popup">
+                            <a href="{{ asset('assets/images/portfolio/'.$portfolio->images) }}" class="work-popup">
                                 {!! Html::image('assets/images/portfolio/'.$portfolio->images) !!}
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-item">
@@ -160,22 +159,17 @@
             <div class="col-md-4">
                 <div class="single-details">
                     <h2>Locations:</h2>
-                    <p>Jurain,Dhaka,Bangladesh</p>
+                    <p>Arshakunyats 5, Yerevan, Armenia</p>
                 </div>
                 <div class="single-details">
                     <h2>Phone Number:</h2>
-                    <p>+8801714284621
-                        <br> +8801714284621</p>
+                    <p>+374 (41) 43-53-31</p>
                 </div>
                 <div class="single-details">
                     <h2>Email:</h2>
                     <p>You can send us a message via the form aside or just send us an email at
-                        <br> <strong>admin@websitename.com</strong>
+                        <br> <a class="mail_to" href="mailto:support@smartcode.am"><strong>support@smartcode.am</strong></a>
                     </p>
-                </div>
-                <div class="single-details">
-                    <h2>Open Time:</h2>
-                    <p>Saturday to friday</p>
                 </div>
             </div>
 
@@ -184,7 +178,8 @@
                     <div class="col-md-12">
                         <div class="contact-form">
                             <div class="row">
-                                <form id="contact-form" method="post" enctype="multipart/form-data">
+                                <form action="{{action('MailController@sendMail')}}" method="post" enctype="multipart/form-data">
+                                    {{csrf_field()}}
                                     <div class="form-group col-md-6">
                                         <p>Name</p>
                                         <input type="text" name="name" class="form-control" id="first-name" required="required">
@@ -222,17 +217,13 @@
         <div class="row">
             <div class="col-md-8 col-sm-12">
                 <div class="footer-text">
-                    <h6>&copy;copyright | Blandi 2016.Developed by wordpressboss</h6>
+                    <h6>&copy;copyright | SmartCode 2018. Developed by Narek Poghosyan</h6>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="footer-social-link">
                     <ul>
                         <li><a href="#"><i class="fa fa-facebook fb"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter tw"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-dribbble dri"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-instagram ins"></i></a>
                         </li>

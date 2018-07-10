@@ -8,7 +8,7 @@ class PagesEditController extends Controller
     public function execute(Page $page,Request $request){
         if($request->isMethod('delete')){
             $page->delete();
-            return redirect('admin')->with('status','Page successful deleted');
+            return redirect('admin/pages')->with('status','Page successful deleted');
         }
         if($request->isMethod('post')) {
             $input = $request -> except('_token');
@@ -34,7 +34,7 @@ class PagesEditController extends Controller
             unset($input['old_images']);
             $page->fill($input);
             if($page->update()){
-                return redirect('admin')->with(['status'=>'Page- '.$input['name'].' Successful Updated']);
+                return redirect('admin/pages')->with(['status'=>'Page- '.$input['name'].' Successful Updated']);
             }
         }
         $old=$page->toArray();

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header id="header_wrapper">
+    <header id="header_wrapper" class="container">
         @yield('header')
 
         @if(session('status'))
