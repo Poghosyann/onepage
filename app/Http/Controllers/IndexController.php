@@ -29,10 +29,10 @@ class IndexController extends Controller
         $item = array('title' => 'Service', 'alias' => 'service');
         array_push($menu,$item);
 
-        $item = array('title' => 'Portfolio', 'alias' => 'work');
+        $item = array('title' => 'Team', 'alias' => 'team');
         array_push($menu,$item);
 
-        $item = array('title' => 'Team', 'alias' => 'team');
+        $item = array('title' => 'Portfolio', 'alias' => 'work');
         array_push($menu,$item);
 
         $item = array('title' => 'Contact', 'alias' => 'contact');

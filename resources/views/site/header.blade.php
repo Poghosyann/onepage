@@ -5,7 +5,7 @@
                 <!-- START LOGO DESIGN AREA -->
                 <div class="logo">
                     <a href="/">
-                        <p>Blandi</p>
+                        <img src="{{ asset('assets/images/logo-dark.png') }}" alt="logo">
                     </a>
                 </div>
                 <!-- END LOGO DESIGN AREA -->

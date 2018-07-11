@@ -20,7 +20,7 @@ class PeopleEditController extends Controller
             ];
             $validator=Validator::make($input,[
                 'name'=>'required|max:255',
-                'filter'=>'required|max:20',
+                'position'=>'required|max:20',
             ],$messages);
             if($validator->fails()){
                 return redirect()->route('peopleEdit',['people'=>$input['id']])->withErrors($validator)->withInput();
@@ -28,13 +28,13 @@ class PeopleEditController extends Controller
             if($request->hasFile('images')){
                 $file=$request->file('images');
                 $input['images']=$file->getClientOriginalName();
-                $file->move(public_path('assets/images/people/'),$input['images']);
+                $file->move(public_path('assets/images/team/'),$input['images']);
             }else{
                 $input['images']=$input['old_images'];
             }
             $people->update( $input);
             if($people->save()){
-                return redirect()->route('people')->with(['status'=>'people successful updated']);
+                return redirect()->route('admin/people')->with(['status'=>'people successful updated']);
             }
         }
         if(view()->exists('admin.peoples_edit')){
